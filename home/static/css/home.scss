@@ -1,0 +1,10 @@
+@import '../../../static/css/variables.scss';
+@import '../../../static/css/mixins.scss';
+
+/* Home Hero */
+
+.home-hero-section {
+    width: 100%;
+    height: 100vh;
+    @include vertical-gradient;
+}

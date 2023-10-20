@@ -1,0 +1,236 @@
+@import './variables';
+
+/* Import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap');
+
+/* Project wide */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $gray-light-1;
+    min-height: 100vh;
+    position: relative;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: $white;
+    }
+}
+
+.box-shadow {
+    box-shadow: 13px 13px 22px 3px rgba(0,0,0,0.65);
+    -webkit-box-shadow: 13px 13px 22px 3px rgba(0,0,0,0.65);
+    -moz-box-shadow: 13px 13px 22px 3px rgba(0,0,0,0.65);
+}
+
+.container-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-col {
+    @extend .container-row;
+    flex-direction: column;
+}
+
+.section {
+    width: 100%;
+    @extend .container-col;
+    background: $gray-light-1;
+    padding: 100px 0;
+}
+
+.section-container {
+    width: 1400px;
+}
+
+.img-container {
+    @extend .container-row;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-100a {
+    width: 100%;
+    height: auto;
+}
+
+.dark-text {
+    color: $gray-dark-1;
+    font-size: $font-size;
+}
+
+.white-text {
+    color: $white;
+    font-size: $font-size;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.btn {
+    @extend .container-row;
+    font-size: $font-size;
+    padding: 15px 25px;
+    border-radius: 50px;
+    color: $white;
+    background-color: $blue-1;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sr-only {
+    display: none !important;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.header-container {
+    width: calc(100% - 100px);
+    height: 100%;
+}
+
+.logo-container {
+    gap: 5px;
+}
+
+.logo-img-container {
+    width: 100px;
+    height: 100px;
+}
+
+.logo-text-container {
+    gap: 5px;
+}
+
+h1.logo-text {
+    font-size: $subheading-size;
+}
+
+h2.logo-text {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.nav-btn {
+    cursor: pointer;
+    width: 50px;
+    height: 36px;
+    justify-content: space-between;
+
+    .nav-btn-bar {
+        width: 100%;
+        height: 5px;
+        border-radius: 20px;
+        background-color: $white;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+    &.active {
+        .nav-btn-bar {
+            &.b1 {
+                transform: rotate(-45deg) translateY(21px);
+            }
+
+            &.b3 {
+                transform: rotate(45deg) translateY(-21px);
+            }
+            
+            &.b2 {
+                display: none;
+            }
+        }
+    }
+}
+
+.nav-menu-container {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 250px;
+    height: 260px;
+    overflow: hidden;
+}
+
+.nav-menu {
+    position: relative;
+    width: 250px;
+    padding: 40px;
+    background-color: $transparent-dark-1;
+    border-radius: 5px 0 0 5px;
+    gap: 15px;
+    transition: all 0.3s ease;
+    transform: translateX(100%);
+
+    &.active {
+        transform: translateX(0);
+    }
+}
+
+.nav-link {
+    @extend .white-text;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: $white;
+        transition: all 0.3s ease;
+        content: "";
+    }
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }   
+    }
+}
