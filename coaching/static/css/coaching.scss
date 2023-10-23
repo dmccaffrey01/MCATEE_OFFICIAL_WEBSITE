@@ -1,0 +1,30 @@
+@import '../../../static/css/variables.scss';
+@import '../../../static/css/mixins.scss';
+
+/* About */
+
+.coaching-hero-section {
+    background: rgba(15,15,15,1);
+    background: linear-gradient(270deg, rgba(15,15,15,1) 20%, rgba(83,83,83,1) 73%);
+    height: 100vh;
+
+    .img-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .main-text-container {
+        width: 700px;
+        gap: 30px;
+    }
+
+    .btns-container {
+        gap: 20px;
+    }
+}
+
+
+
+
+
+

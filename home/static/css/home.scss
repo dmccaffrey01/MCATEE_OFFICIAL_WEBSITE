@@ -6,7 +6,27 @@
 .home-hero-section {
     width: 100%;
     height: 100vh;
-    @include vertical-gradient;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    background-color: transparent;
+
+    .home-hero-wrapper {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+        transition: all 1s ease;
+        z-index: 1;
+        @include vertical-gradient;
+
+        &.transition {
+            transform: translateX(-100%);
+        }
+    }
 
     .home-hero-container {
         width: 100%;
@@ -28,10 +48,21 @@
     }
 }
 
+header {
+    position: fixed;
+    opacity: 1;
+    transition: all 0.2s ease;
+
+    &.transition {
+        opacity: 0;
+    }
+}
+
 /* Home Section */
 
 .home-section {
     @include horizontal-gradient;
+    overflow: hidden;
 
     .main-text-container {
         width: 700px;
@@ -40,12 +71,33 @@
 
     .text-container {
         gap: 20px;
+
+        &.hidden .white-text {
+            opacity: 0;
+            transform: translateX(100%);
+            transition: all 0.8s ease;
+        }
+
+        &.show .white-text {
+            opacity: 1;
+            transform: translate(0);
+
+            &:nth-child(2) {
+                transition-delay: 0.3s;
+            }
+        }
+
+
     }
 
     .img-container {
         width: 500px;
         height: 500px;
         border-radius: 3px;
+    }
+
+    &.home-struggles-section {
+        padding-top: 400px;
     }
 
 }

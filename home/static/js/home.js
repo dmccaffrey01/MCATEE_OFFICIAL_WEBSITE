@@ -60,7 +60,6 @@ const swipeCards = (currentDot, nextDot, direction) => {
     cards.forEach((card, i) => {
         let currentPosition = currentPositions[i];
         let nextPosition = nextPositions[i];
-        console.log(currentPosition, nextPosition);
         if (nextPosition === 'left' && direction == -1) {
             card.style.display = "none";
             card.classList.remove("right");
@@ -111,3 +110,55 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }, 4000);
 });
+
+const heroWrapper = document.querySelector(".home-hero-wrapper");
+const headerEl = document.querySelector("header");
+
+let scrollEnabled = false;
+let DOMLoaded = false;
+let backToTop = false;
+
+function handleScroll(event) {
+  if (!scrollEnabled && DOMLoaded && !backToTop) {
+    event.preventDefault();
+    document.documentElement.scrollTop = 200;
+    heroWrapper.classList.add("transition");
+    headerEl.classList.add("transition");
+    window.setTimeout(() => {
+        scrollEnabled = true;
+    }, 500);
+  } else if (document.documentElement.scrollTop === 0) {
+    scrollEnabled = false;
+    backToTop = true;
+    heroWrapper.classList.remove("transition");
+    headerEl.classList.remove("transition");
+    window.setTimeout(() => {
+        document.documentElement.scrollTop = 200;
+
+        window.setTimeout(() => {
+            backToTop = false;
+        }, 500);
+    }, 1000);
+  }
+}
+
+document.addEventListener("scroll", handleScroll);
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.documentElement.scrollTop = 200;
+    window.setTimeout(() => {
+        DOMLoaded = true;
+    }, 500);
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll(".hidden");
+hiddenElements.forEach((el) => observer.observe(el));

@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/coaching.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="coaching-hero-section section">
+    <div class="section-container container-row space-between">
+        <div class="img-container box-shadow">
+            <img src="{{ MEDIA_URL }}jenny.jpeg" alt="Jenny" class="img-100a">
+        </div>
+
+        <div class="main-text-container container-col align-start">
+            <p class="white-text">Get coaching from a seasoned expert?</p>
+
+            <h2 class="heading white-text">Jenny McAtee shares her insider knowledge and proven strategies for building wealth through real estate</h2>
+
+            <div class="btns-container container-row">
+                <a href="" class="btn-1 btn">Contact</a>
+                <a href="" class="btn-2 btn">Book a call</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+{% endblock %}

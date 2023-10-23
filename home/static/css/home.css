@@ -2,8 +2,26 @@
 .home-hero-section {
   width: 100%;
   height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: transparent;
+}
+.home-hero-section .home-hero-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  transition: all 2s ease;
+  z-index: 1;
   background: rgb(83, 83, 83);
   background: linear-gradient(0deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
+}
+.home-hero-section .home-hero-wrapper.transition {
+  transform: translateX(-100%);
 }
 .home-hero-section .home-hero-container {
   width: 100%;
@@ -21,10 +39,20 @@
   width: 50%;
 }
 
+header {
+  position: fixed;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+header.transition {
+  opacity: 0;
+}
+
 /* Home Section */
 .home-section {
   background: rgb(83, 83, 83);
   background: linear-gradient(270deg, rgb(83, 83, 83) 20%, rgb(15, 15, 15) 73%);
+  overflow: hidden;
 }
 .home-section .main-text-container {
   width: 700px;
@@ -33,10 +61,25 @@
 .home-section .text-container {
   gap: 20px;
 }
+.home-section .text-container.hidden .white-text {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.8s ease;
+}
+.home-section .text-container.show .white-text {
+  opacity: 1;
+  transform: translate(0);
+}
+.home-section .text-container.show .white-text:nth-child(2) {
+  transition-delay: 0.3s;
+}
 .home-section .img-container {
   width: 500px;
   height: 500px;
   border-radius: 3px;
+}
+.home-section.home-struggles-section {
+  padding-top: 400px;
 }
 
 /* Testimonial Seciton */
