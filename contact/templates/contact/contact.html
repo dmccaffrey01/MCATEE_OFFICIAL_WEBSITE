@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="contact-section section">
+    <div class="section-container container-row space-between">
+        <div class="contact-info-container container-col align-start">
+            <h2 class="heading white-text">Get in Contact With Us</h2>
+
+            <div class="main-info-container container-col align-start">
+                <div class="line-container container-col">
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                    <div class="dot"></div>
+                    <div class="line"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="info-group container-col align-start justify-start">
+                    <p class="gold-text white-text">Phone Number</p>
+                    <p class="white-text">McAtee Group (240) 595-2680</p>
+                    <p class="white-text">Broker Office (800) 913-4326</p>
+                </div>
+                <div class="info-group container-col align-start justify-start">
+                    <p class="gold-text white-text">Email Address</p>
+                    <p class="white-text">info@mcateegroup.com</p>
+                </div>
+                <div class="info-group container-col align-start justify-start">
+                    <p class="gold-text white-text">Address</p>
+                    <p class="white-text">Taylor Properties,</p>
+                    <p class="white-text">175 Admiral Coachrane Drive, #112</p>
+                    <p class="white-text">Annopolis, MD 21401</p>
+                </div>
+                <div class="social-container container-row">
+                    <a href="https://www.facebook.com/McAteeGroup/?show_switched_toast=0&show_invite_to_follow=0&show_switched_tooltip=0&show_podcast_settings=0&show_community_review_changes=0&show_community_rollback=0&show_follower_visibility_disclosure=0" class="fa-icon">
+                        <i class="fa-brands fa-facebook white-text"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mcateegroupmedia/" class="fa-icon">
+                        <i class="fa-brands fa-instagram white-text"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-form-container container-col align-start">
+            <form class="container-col align-start">
+                <fieldset class="container-col align-start">
+                    <label class="white-text" for="name">Your Name</label>
+                    <input type="text" class="input" id="name" name="name" placeholder="Enter your name">
+                </fieldset>
+                <fieldset class="container-col align-start">
+                    <label class="white-text" for="email">Your Email</label>
+                    <input type="text" class="input" id="email" name="email" placeholder="Enter your email">
+                </fieldset>
+                <fieldset class="container-col align-start">
+                    <label class="white-text" for="message">Your Message</label>
+                    <input type="text" class="input" id="message" name="email" placeholder="Enter your message">
+                </fieldset>
+                <button class="btn-1 btn input-btn" type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+
+{% endblock %}

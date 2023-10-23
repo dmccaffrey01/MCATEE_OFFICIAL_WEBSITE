@@ -1,0 +1,116 @@
+@import '../../../static/css/variables.scss';
+@import '../../../static/css/mixins.scss';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Playfair+Display&display=swap');
+
+.contact-section {
+    @include horizontal-gradient;
+    height: 100vh;
+
+    .contact-info-container {
+        width: 650px;
+        gap: 50px;
+    }
+
+    .main-info-container {
+        position: relative;
+    }
+
+    .line-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        .dot {
+            width: 25px;
+            height: 25px;
+            background-color: $white;
+            border-radius: 50%;
+        }
+
+        .line {
+            width: 3px;
+            height: calc(100px - 25px);
+            background-color: $gold-1;
+        }
+    }
+
+    .gold-text {
+        color: $gold-1;
+    }
+
+    .info-group {
+        height: 100px;
+        margin-left: 50px;
+        gap: 5px;
+    }
+
+    .social-container {
+        gap: 10px;
+        margin: 30px 0 0 50px;
+
+        .white-text {
+            font-size: 2.5rem;
+        }
+    }
+
+    .contact-form-container {
+        width: 650px;
+    }
+
+    form, fieldset {
+        width: 500px;
+        border: none;
+    }
+
+    form {
+        gap: 30px;
+    }
+
+    fieldset {
+        gap: 10px;
+        position: relative;
+        &::after {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            height: 3px;
+            width: 100%;
+            background-color: $gold-1;
+            content: "";
+        }
+    }
+
+    label {
+        margin-left: 25px;
+    }
+
+    .input {
+        width: 100%;
+        border-radius: 5px;
+        padding: 15px 25px;
+        color: $white;
+        border: none;
+        background-color: transparent;
+        font-size: $font-size;
+
+        &::placeholder {
+            color: rgba(#fff, 0.7);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .input-btn {
+        width: 100%;
+        border-radius: 5px;
+        background-color: transparent;
+    }
+}
+
+
+
+
+
+

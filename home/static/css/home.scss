@@ -45,6 +45,12 @@
 
     .img-container {
         width: 50%;
+        align-items: flex-end;
+    }
+
+    .img-100a {
+        height: 100%;
+        width: auto;
     }
 }
 

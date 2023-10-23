@@ -14,7 +14,7 @@
                 <h2 class="white-text main">Welcome to the McAtee Group</h2>
                 <p class="white-text sub">of Taylor Properties</p>
             </div>
-            <div class="text-container container-col align-start">
+            <div class="text-container container-col align-start hidden">
                 <div class="white-text">
                     At McAtee Group, we are committed to providing exceptional customer service in every step of the process. 
                 </div>
@@ -48,7 +48,7 @@
                 <h2 class="white-text main">Jenny Mc Atee</h2>
                 <p class="white-text sub">Team Leader, GSI, GRI, SRS</p>
             </div>
-            <div class="text-container container-col align-start">
+            <div class="text-container container-col align-start hidden">
                 <p class="white-text">
                     Jenny is a dedicated and experienced REALTOR® who has been helping clients achieve their real estate goals for over 15 years. 
                 </p>
@@ -81,7 +81,7 @@
             <div class="subheading-container subheading container-col align-start">
                 <h2 class="white-text main">Brandon Wilson</h2>
             </div>
-            <div class="text-container container-col align-start">
+            <div class="text-container container-col align-start hidden">
                 <p class="white-text">Brandon Wilson hails from Tunkhannock, Pennsylvania, with a dairy farm upbringing. He attended Lock Haven University, earning a Bachelor's in Health and a Minor in International Studies with the support of a 4-year Army ROTC scholarship.</p>
                 <p class="white-text">After obtaining her Bachelor’s degree in Information Systems Technology from UMBC, Jenny became interested in local real estate.</p>
                 <p class="white-text">Brandon commissioned into the US Army Reserves in May 2011 and completed the Basic Officer Leadership Course at Fort Lee, VA, becoming a Transportation Officer.</p>
@@ -104,7 +104,7 @@
             <div class="subheading-container subheading container-col align-start">
                 <h2 class="white-text main">Beth Ann</h2>
             </div>
-            <div class="text-container container-col align-start">
+            <div class="text-container container-col align-start hidden">
                 <p class="white-text">Beth Ann, a resident of Hanover, MD for over 11 years, began her successful real estate career after being born and raised in Anne Arundel County.</p>
                 <p class="white-text">Beth Ann approaches each showing with a deep understanding of the impact a home can have on someone, focusing on clear and warm communication to keep her clients informed throughout the buying and selling process.</p>
                 <p class="white-text">What distinguishes Beth Ann is her client-first approach, prioritizing education and coaching over high-pressure sales tactics. She tailors her services to each unique client and situation, ensuring a fun, professional, and successful real estate transaction.</p>
@@ -125,7 +125,7 @@
             <div class="subheading-container subheading container-col align-start">
                 <h2 class="white-text main">Tracy Fitzgerald</h2>
             </div>
-            <div class="text-container container-col align-start">
+            <div class="text-container container-col align-start hidden">
                 <p class="white-text">Tracy is a devoted and eager real estate agent, always prepared to help clients in their rental or home-buying journey. He possesses a genuine passion for continuous learning and is unafraid to seek out answers and stay informed.</p>
                 <p class="white-text">Tracy's dedication to education and keeping up with the latest trends in the real estate market makes him an excellent choice for first-time homebuyers as well as individuals navigating the complexities of the rental process.</p>
                 <p class="white-text">Whether you're looking for a rental or your dream home, you can get in touch with Tracy at tracy@mcateegroup.com to kickstart your real estate journey with confidence.</p>
@@ -146,7 +146,7 @@
             <div class="subheading-container subheading container-col align-start">
                 <h2 class="white-text main">Kylyna Kaiser</h2>
             </div>
-            <div class="text-container container-col align-start">
+            <div class="text-container container-col align-start hidden">
                 <p class="white-text">I'm Kylyna, a proud Ukrainian-American real estate professional.</p>
                 <p class="white-text">I focus on Howard County, where I've lived across Maryland, and I cherish building personal relationships with clients. My success is measured by their happiness.</p>
                 <p class="white-text">I'm not just a licensed real estate sales agent; I hold a degree in Business and American Sign Language. With my ASL background, I aim to support the Deaf community in the home buying process and be a strong advocate for all.</p>
@@ -163,5 +163,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
+
+<script src="{% static 'js/about.js' %}"></script>
 
 {% endblock %}
