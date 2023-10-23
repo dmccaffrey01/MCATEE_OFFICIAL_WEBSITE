@@ -59,17 +59,36 @@ a:visited {
 
 .dark-text {
   color: #333333;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .white-text, .nav-link {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .heading {
   font-size: 3rem;
   font-weight: 600;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.subheading {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Playfair Display", sans-serif;
+  position: relative;
+  margin-bottom: 10px;
+}
+.subheading::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  width: calc(100% + 30px);
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #af8c53;
 }
 
 .center-text {
@@ -77,14 +96,19 @@ a:visited {
 }
 
 .btn {
-  font-size: 1.5rem;
-  padding: 15px 25px;
+  font-size: 1.4rem;
+  padding: 15px 30px;
   border-radius: 50px;
   color: #ffffff;
-  background-color: #003e64;
+  width: 240px;
   border: none;
   text-align: center;
   cursor: pointer;
+  border: 3px solid #af8c53;
+}
+
+.btn-2 {
+  background-color: #af8c53;
 }
 
 .sr-only {

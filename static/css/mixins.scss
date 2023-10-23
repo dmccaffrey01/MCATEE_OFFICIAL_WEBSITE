@@ -1,4 +1,25 @@
 @mixin vertical-gradient {
-    background: rgb(115,115,115);
-    background: linear-gradient(0deg, rgba(115,115,115,1) 20%, rgba(51,51,51,1) 80%);
+    background: rgb(83,83,83);
+    background: linear-gradient(0deg, rgba(83,83,83,1) 20%, rgba(15,15,15,1) 73%);
+}
+
+@mixin horizontal-gradient {
+    background: rgb(83,83,83);
+    background: linear-gradient(270deg, rgba(83,83,83,1) 20%, rgba(15,15,15,1) 73%);
+}
+
+@mixin absolute-center($axis) {
+    position: absolute;
+
+    @if $axis == x {
+        left: 50%;
+        transform: translateX(-50%);
+    } @else if $axis == y {
+        top: 50%;
+        transform: translateY(-50%);
+    } @else {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }

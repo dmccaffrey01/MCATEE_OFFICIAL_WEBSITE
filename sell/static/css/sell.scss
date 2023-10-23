@@ -1,0 +1,30 @@
+.svg-container {
+    width: 1400px;
+}
+
+.svg-section {
+    background-color: #333;
+}
+
+.svg-container path {
+    stroke: gold;
+    stroke-dashoffset: 0;
+    stroke-dasharray: 1560;
+}
+
+@for $i from 78 through 185 {
+    .path-#{$i} {
+        animation: animate-svg 10s linear forwards #{$i * 0.1};
+    }
+  }
+
+
+@keyframes animate-svg {
+    0% {
+        stroke-dashoffset: 1560;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+
+}

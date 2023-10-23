@@ -1,0 +1,77 @@
+@import '../../../static/css/variables.scss';
+@import '../../../static/css/mixins.scss';
+
+/* About */
+
+.about-hero-section {
+    height: 100vh;
+    @include vertical-gradient;
+
+    .section-container {
+        margin-top: 90px;
+    }
+
+    .main-text-container {
+        width: 700px;
+        gap: 30px;
+    }
+    
+    .subheading-container {
+        width: 100%;
+        .main {
+            font-size: 3rem;
+        }
+
+        .sub {
+            font-size: $subheading-size;
+        }
+    }
+
+    .text-container {
+        gap: 20px;
+    }
+
+    .footer-text {
+        font-style: italic;
+    }
+
+    .img-container {
+        width: 500px;
+        height: 500px;
+        border-radius: 5px;
+    }
+}
+
+/* Meet the team */
+
+.mtt-section {
+    @extend .about-hero-section;
+    position: relative;
+
+    svg {
+        background-color: $gd-1;
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    svg path {
+        fill: $gd-2;
+    }
+
+    .gold-text {
+        color: $gold-1;
+    }
+
+    &:nth-of-type(odd) .section-container {
+        flex-direction: row-reverse;
+    }
+}
+
+
+
+
+
+

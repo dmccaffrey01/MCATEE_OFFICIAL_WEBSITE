@@ -1,0 +1,456 @@
+.svg-container {
+  width: 1400px;
+}
+
+.svg-section {
+  background-color: #333;
+}
+
+.svg-container path {
+  stroke: gold;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1560;
+}
+
+.path-78 {
+  animation: animate-svg 10s linear forwards 7.8;
+}
+
+.path-79 {
+  animation: animate-svg 10s linear forwards 7.9;
+}
+
+.path-80 {
+  animation: animate-svg 10s linear forwards 8;
+}
+
+.path-81 {
+  animation: animate-svg 10s linear forwards 8.1;
+}
+
+.path-82 {
+  animation: animate-svg 10s linear forwards 8.2;
+}
+
+.path-83 {
+  animation: animate-svg 10s linear forwards 8.3;
+}
+
+.path-84 {
+  animation: animate-svg 10s linear forwards 8.4;
+}
+
+.path-85 {
+  animation: animate-svg 10s linear forwards 8.5;
+}
+
+.path-86 {
+  animation: animate-svg 10s linear forwards 8.6;
+}
+
+.path-87 {
+  animation: animate-svg 10s linear forwards 8.7;
+}
+
+.path-88 {
+  animation: animate-svg 10s linear forwards 8.8;
+}
+
+.path-89 {
+  animation: animate-svg 10s linear forwards 8.9;
+}
+
+.path-90 {
+  animation: animate-svg 10s linear forwards 9;
+}
+
+.path-91 {
+  animation: animate-svg 10s linear forwards 9.1;
+}
+
+.path-92 {
+  animation: animate-svg 10s linear forwards 9.2;
+}
+
+.path-93 {
+  animation: animate-svg 10s linear forwards 9.3;
+}
+
+.path-94 {
+  animation: animate-svg 10s linear forwards 9.4;
+}
+
+.path-95 {
+  animation: animate-svg 10s linear forwards 9.5;
+}
+
+.path-96 {
+  animation: animate-svg 10s linear forwards 9.6;
+}
+
+.path-97 {
+  animation: animate-svg 10s linear forwards 9.7;
+}
+
+.path-98 {
+  animation: animate-svg 10s linear forwards 9.8;
+}
+
+.path-99 {
+  animation: animate-svg 10s linear forwards 9.9;
+}
+
+.path-100 {
+  animation: animate-svg 10s linear forwards 10;
+}
+
+.path-101 {
+  animation: animate-svg 10s linear forwards 10.1;
+}
+
+.path-102 {
+  animation: animate-svg 10s linear forwards 10.2;
+}
+
+.path-103 {
+  animation: animate-svg 10s linear forwards 10.3;
+}
+
+.path-104 {
+  animation: animate-svg 10s linear forwards 10.4;
+}
+
+.path-105 {
+  animation: animate-svg 10s linear forwards 10.5;
+}
+
+.path-106 {
+  animation: animate-svg 10s linear forwards 10.6;
+}
+
+.path-107 {
+  animation: animate-svg 10s linear forwards 10.7;
+}
+
+.path-108 {
+  animation: animate-svg 10s linear forwards 10.8;
+}
+
+.path-109 {
+  animation: animate-svg 10s linear forwards 10.9;
+}
+
+.path-110 {
+  animation: animate-svg 10s linear forwards 11;
+}
+
+.path-111 {
+  animation: animate-svg 10s linear forwards 11.1;
+}
+
+.path-112 {
+  animation: animate-svg 10s linear forwards 11.2;
+}
+
+.path-113 {
+  animation: animate-svg 10s linear forwards 11.3;
+}
+
+.path-114 {
+  animation: animate-svg 10s linear forwards 11.4;
+}
+
+.path-115 {
+  animation: animate-svg 10s linear forwards 11.5;
+}
+
+.path-116 {
+  animation: animate-svg 10s linear forwards 11.6;
+}
+
+.path-117 {
+  animation: animate-svg 10s linear forwards 11.7;
+}
+
+.path-118 {
+  animation: animate-svg 10s linear forwards 11.8;
+}
+
+.path-119 {
+  animation: animate-svg 10s linear forwards 11.9;
+}
+
+.path-120 {
+  animation: animate-svg 10s linear forwards 12;
+}
+
+.path-121 {
+  animation: animate-svg 10s linear forwards 12.1;
+}
+
+.path-122 {
+  animation: animate-svg 10s linear forwards 12.2;
+}
+
+.path-123 {
+  animation: animate-svg 10s linear forwards 12.3;
+}
+
+.path-124 {
+  animation: animate-svg 10s linear forwards 12.4;
+}
+
+.path-125 {
+  animation: animate-svg 10s linear forwards 12.5;
+}
+
+.path-126 {
+  animation: animate-svg 10s linear forwards 12.6;
+}
+
+.path-127 {
+  animation: animate-svg 10s linear forwards 12.7;
+}
+
+.path-128 {
+  animation: animate-svg 10s linear forwards 12.8;
+}
+
+.path-129 {
+  animation: animate-svg 10s linear forwards 12.9;
+}
+
+.path-130 {
+  animation: animate-svg 10s linear forwards 13;
+}
+
+.path-131 {
+  animation: animate-svg 10s linear forwards 13.1;
+}
+
+.path-132 {
+  animation: animate-svg 10s linear forwards 13.2;
+}
+
+.path-133 {
+  animation: animate-svg 10s linear forwards 13.3;
+}
+
+.path-134 {
+  animation: animate-svg 10s linear forwards 13.4;
+}
+
+.path-135 {
+  animation: animate-svg 10s linear forwards 13.5;
+}
+
+.path-136 {
+  animation: animate-svg 10s linear forwards 13.6;
+}
+
+.path-137 {
+  animation: animate-svg 10s linear forwards 13.7;
+}
+
+.path-138 {
+  animation: animate-svg 10s linear forwards 13.8;
+}
+
+.path-139 {
+  animation: animate-svg 10s linear forwards 13.9;
+}
+
+.path-140 {
+  animation: animate-svg 10s linear forwards 14;
+}
+
+.path-141 {
+  animation: animate-svg 10s linear forwards 14.1;
+}
+
+.path-142 {
+  animation: animate-svg 10s linear forwards 14.2;
+}
+
+.path-143 {
+  animation: animate-svg 10s linear forwards 14.3;
+}
+
+.path-144 {
+  animation: animate-svg 10s linear forwards 14.4;
+}
+
+.path-145 {
+  animation: animate-svg 10s linear forwards 14.5;
+}
+
+.path-146 {
+  animation: animate-svg 10s linear forwards 14.6;
+}
+
+.path-147 {
+  animation: animate-svg 10s linear forwards 14.7;
+}
+
+.path-148 {
+  animation: animate-svg 10s linear forwards 14.8;
+}
+
+.path-149 {
+  animation: animate-svg 10s linear forwards 14.9;
+}
+
+.path-150 {
+  animation: animate-svg 10s linear forwards 15;
+}
+
+.path-151 {
+  animation: animate-svg 10s linear forwards 15.1;
+}
+
+.path-152 {
+  animation: animate-svg 10s linear forwards 15.2;
+}
+
+.path-153 {
+  animation: animate-svg 10s linear forwards 15.3;
+}
+
+.path-154 {
+  animation: animate-svg 10s linear forwards 15.4;
+}
+
+.path-155 {
+  animation: animate-svg 10s linear forwards 15.5;
+}
+
+.path-156 {
+  animation: animate-svg 10s linear forwards 15.6;
+}
+
+.path-157 {
+  animation: animate-svg 10s linear forwards 15.7;
+}
+
+.path-158 {
+  animation: animate-svg 10s linear forwards 15.8;
+}
+
+.path-159 {
+  animation: animate-svg 10s linear forwards 15.9;
+}
+
+.path-160 {
+  animation: animate-svg 10s linear forwards 16;
+}
+
+.path-161 {
+  animation: animate-svg 10s linear forwards 16.1;
+}
+
+.path-162 {
+  animation: animate-svg 10s linear forwards 16.2;
+}
+
+.path-163 {
+  animation: animate-svg 10s linear forwards 16.3;
+}
+
+.path-164 {
+  animation: animate-svg 10s linear forwards 16.4;
+}
+
+.path-165 {
+  animation: animate-svg 10s linear forwards 16.5;
+}
+
+.path-166 {
+  animation: animate-svg 10s linear forwards 16.6;
+}
+
+.path-167 {
+  animation: animate-svg 10s linear forwards 16.7;
+}
+
+.path-168 {
+  animation: animate-svg 10s linear forwards 16.8;
+}
+
+.path-169 {
+  animation: animate-svg 10s linear forwards 16.9;
+}
+
+.path-170 {
+  animation: animate-svg 10s linear forwards 17;
+}
+
+.path-171 {
+  animation: animate-svg 10s linear forwards 17.1;
+}
+
+.path-172 {
+  animation: animate-svg 10s linear forwards 17.2;
+}
+
+.path-173 {
+  animation: animate-svg 10s linear forwards 17.3;
+}
+
+.path-174 {
+  animation: animate-svg 10s linear forwards 17.4;
+}
+
+.path-175 {
+  animation: animate-svg 10s linear forwards 17.5;
+}
+
+.path-176 {
+  animation: animate-svg 10s linear forwards 17.6;
+}
+
+.path-177 {
+  animation: animate-svg 10s linear forwards 17.7;
+}
+
+.path-178 {
+  animation: animate-svg 10s linear forwards 17.8;
+}
+
+.path-179 {
+  animation: animate-svg 10s linear forwards 17.9;
+}
+
+.path-180 {
+  animation: animate-svg 10s linear forwards 18;
+}
+
+.path-181 {
+  animation: animate-svg 10s linear forwards 18.1;
+}
+
+.path-182 {
+  animation: animate-svg 10s linear forwards 18.2;
+}
+
+.path-183 {
+  animation: animate-svg 10s linear forwards 18.3;
+}
+
+.path-184 {
+  animation: animate-svg 10s linear forwards 18.4;
+}
+
+.path-185 {
+  animation: animate-svg 10s linear forwards 18.5;
+}
+
+@keyframes animate-svg {
+  0% {
+    stroke-dashoffset: 1560;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*# sourceMappingURL=sell.css.map */

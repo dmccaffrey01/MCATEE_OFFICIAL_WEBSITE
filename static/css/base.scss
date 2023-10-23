@@ -78,6 +78,27 @@ a {
 .heading {
     font-size: 3rem;
     font-weight: 600;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.subheading {
+    font-size: $subheading-size;
+    font-weight: 600;
+    font-family: 'Playfair Display', sans-serif;
+
+    position: relative;
+    margin-bottom: 10px;
+
+    &::after {
+        position: absolute;
+        content: "";
+        bottom: -15px;
+        width: calc(100% + 30px);
+        height: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $gold-1;
+    }
 }
 
 .center-text {
@@ -87,13 +108,18 @@ a {
 .btn {
     @extend .container-row;
     font-size: $font-size;
-    padding: 15px 25px;
+    padding: 15px 30px;
     border-radius: 50px;
     color: $white;
-    background-color: $blue-1;
+    width: 240px;
     border: none;
     text-align: center;
     cursor: pointer;
+    border: 3px solid $gold-1;
+}
+
+.btn-2 {
+    background-color: $gold-1;
 }
 
 .sr-only {
